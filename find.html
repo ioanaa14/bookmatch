@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find a book</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;1,400&family=Figtree:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">Book Match</a>
+    <p class="tagline">Find your next read by genre, trope and mood</p>
+  </header>
+
+  <div class="page-wrapper">
+    <nav class="side-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="has-submenu">
+          <a href="find.html" class="current-page">Find a book</a>
+          <ul class="submenu">
+            <li><a href="find.html#genres">Genres</a></li>
+            <li><a href="find.html#moods">Mood</a></li>
+            <li><a href="find.html#extras">Extras</a></li>
+          </ul>
+        </li>
+        <li><a href="month.html">Book of the month</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+
+    <section id="find-intro">
+      <h1 class="page-title">Find a book</h1>
+      <p>Start by choosing your genres. After you tick them, the tropes for those genres appear in the next step, so you can mix, for example, romance with fantasy tropes.</p>
+    </section>
+
+    <section id="find">
+
+      <form id="search-form" action="#results" method="get">
+
+        <div class="form-box" id="genres">
+          <h3>1. Pick your genres</h3>
+          <p>Tick one or more genres. Their tropes will show up below.</p>
+
+          <div class="genre-list">
+          <input type="checkbox" id="any" name="genre" value="any">
+          <label for="any">Any genre</label>
+          <input type="checkbox" id="mystery" name="genre" value="mystery">
+          <label for="mystery">Mystery &amp; thriller</label>
+          <input type="checkbox" id="historical" name="genre" value="historical">
+          <label for="historical">Historical</label>
+          <input type="checkbox" id="classics" name="genre" value="classics">
+          <label for="classics">Classics</label>
+          <input type="checkbox" id="romance" name="genre" value="romance">
+          <label for="romance">Romance</label>
+          <input type="checkbox" id="fantasy" name="genre" value="fantasy">
+          <label for="fantasy">Fantasy</label>
+          <input type="checkbox" id="scifi" name="genre" value="scifi">
+          <label for="scifi">Sci-fi</label>
+          <input type="checkbox" id="horror" name="genre" value="horror">
+          <label for="horror">Horror &amp; gothic</label>
+          <input type="checkbox" id="literary" name="genre" value="literary">
+          <label for="literary">Literary &amp; contemporary</label>
+
+            <div class="tropes-area">
+              <h3>2. Pick your tropes</h3>
+            <div class="tropes-group" id="tropes-any">
+              <h4>Tropes that work in any genre</h4>
+              <div class="tropes-list">
+              <label><input type="checkbox" name="tropes-any" value="found family"> found family</label>
+              <label><input type="checkbox" name="tropes-any" value="slow burn"> slow burn</label>
+              <label><input type="checkbox" name="tropes-any" value="enemies to lovers"> enemies to lovers</label>
+              <label><input type="checkbox" name="tropes-any" value="unreliable narrator"> unreliable narrator</label>
+              <label><input type="checkbox" name="tropes-any" value="morally grey"> morally grey</label>
+              <label><input type="checkbox" name="tropes-any" value="coming of age"> coming of age</label>
+              </div>
+            </div>
+
+            <div class="tropes-group" id="tropes-romance">
+              <h4>Romance tropes</h4>
+              <div class="tropes-list">
+              <label><input type="checkbox" name="tropes-romance" value="enemies to lovers"> enemies to lovers</label>
+              <label><input type="checkbox" name="tropes-romance" value="slow burn"> slow burn</label>
+              <label><input type="checkbox" name="tropes-romance" value="fake dating"> fake dating</label>
+              <label><input type="checkbox" name="tropes-romance" value="friends to lovers"> friends to lovers</label>
+              <label><input type="checkbox" name="tropes-romance" value="second chance"> second chance</label>
+              <label><input type="checkbox" name="tropes-romance" value="forced proximity"> forced proximity</label>
+              </div>
+            </div>
+
+            <div class="tropes-group" id="tropes-fantasy">
+              <h4>Fantasy tropes</h4>
+              <div class="tropes-list">
+              <label><input type="checkbox" name="tropes-fantasy" value="found family"> found family</label>
+              <label><input type="checkbox" name="tropes-fantasy" value="chosen one"> chosen one</label>
+              <label><input type="checkbox" name="tropes-fantasy" value="morally grey"> morally grey</label>
+              <label><input type="checkbox" name="tropes-fantasy" value="magic school"> magic school</label>
+              <label><input type="checkbox" name="tropes-fantasy" value="reluctant hero"> reluctant hero</label>
+              <label><input type="checkbox" name="tropes-fantasy" value="hidden heir"> hidden heir</label>
+              <label><input type="checkbox" name="tropes-fantasy" value="court intrigue"> court intrigue</label>
+              <label><input type="checkbox" name="tropes-fantasy" value="dragon riders"> dragon riders</label>
+              </div>
+            </div>
+
+            <div class="tropes-group" id="tropes-scifi">
+              <h4>Sci-fi tropes</h4>
+              <div class="tropes-list">
+              <label><input type="checkbox" name="tropes-scifi" value="first contact"> first contact</label>
+              <label><input type="checkbox" name="tropes-scifi" value="found family on a ship"> found family on a ship</label>
+              <label><input type="checkbox" name="tropes-scifi" value="dystopian rebellion"> dystopian rebellion</label>
+              <label><input type="checkbox" name="tropes-scifi" value="time travel"> time travel</label>
+              <label><input type="checkbox" name="tropes-scifi" value="last human alive"> last human alive</label>
+              <label><input type="checkbox" name="tropes-scifi" value="generation ship"> generation ship</label>
+              <label><input type="checkbox" name="tropes-scifi" value="lone survivor"> lone survivor</label>
+              </div>
+            </div>
+
+            <div class="tropes-group" id="tropes-mystery">
+              <h4>Mystery &amp; thriller tropes</h4>
+              <div class="tropes-list">
+              <label><input type="checkbox" name="tropes-mystery" value="unreliable narrator"> unreliable narrator</label>
+              <label><input type="checkbox" name="tropes-mystery" value="locked room"> locked room</label>
+              <label><input type="checkbox" name="tropes-mystery" value="cold case"> cold case</label>
+              <label><input type="checkbox" name="tropes-mystery" value="amateur detective"> amateur detective</label>
+              <label><input type="checkbox" name="tropes-mystery" value="small town secrets"> small town secrets</label>
+              <label><input type="checkbox" name="tropes-mystery" value="cat and mouse"> cat and mouse</label>
+              <label><input type="checkbox" name="tropes-mystery" value="twist ending"> twist ending</label>
+              <label><input type="checkbox" name="tropes-mystery" value="dual timeline"> dual timeline</label>
+              </div>
+            </div>
+
+            <div class="tropes-group" id="tropes-historical">
+              <h4>Historical tropes</h4>
+              <div class="tropes-list">
+              <label><input type="checkbox" name="tropes-historical" value="forbidden love"> forbidden love</label>
+              <label><input type="checkbox" name="tropes-historical" value="wartime love story"> wartime love story</label>
+              <label><input type="checkbox" name="tropes-historical" value="royal court"> royal court</label>
+              <label><input type="checkbox" name="tropes-historical" value="class divide"> class divide</label>
+              <label><input type="checkbox" name="tropes-historical" value="secret identity"> secret identity</label>
+              <label><input type="checkbox" name="tropes-historical" value="family saga"> family saga</label>
+              <label><input type="checkbox" name="tropes-historical" value="women ahead of their time"> women ahead of their time</label>
+              </div>
+            </div>
+
+            <div class="tropes-group" id="tropes-classics">
+              <h4>Classics tropes</h4>
+              <div class="tropes-list">
+              <label><input type="checkbox" name="tropes-classics" value="coming of age"> coming of age</label>
+              <label><input type="checkbox" name="tropes-classics" value="social satire"> social satire</label>
+              <label><input type="checkbox" name="tropes-classics" value="tragic hero"> tragic hero</label>
+              <label><input type="checkbox" name="tropes-classics" value="redemption"> redemption</label>
+              <label><input type="checkbox" name="tropes-classics" value="gothic atmosphere"> gothic atmosphere</label>
+              <label><input type="checkbox" name="tropes-classics" value="love across social classes"> love across social classes</label>
+              <label><input type="checkbox" name="tropes-classics" value="unrequited love"> unrequited love</label>
+              </div>
+            </div>
+
+            <div class="tropes-group" id="tropes-horror">
+              <h4>Horror &amp; gothic tropes</h4>
+              <div class="tropes-list">
+              <label><input type="checkbox" name="tropes-horror" value="haunted house"> haunted house</label>
+              <label><input type="checkbox" name="tropes-horror" value="creepy small town"> creepy small town</label>
+              <label><input type="checkbox" name="tropes-horror" value="cursed family"> cursed family</label>
+              <label><input type="checkbox" name="tropes-horror" value="isolated setting"> isolated setting</label>
+              <label><input type="checkbox" name="tropes-horror" value="folk horror"> folk horror</label>
+              <label><input type="checkbox" name="tropes-horror" value="slow dread"> slow dread</label>
+              </div>
+            </div>
+
+            <div class="tropes-group" id="tropes-literary">
+              <h4>Literary &amp; contemporary tropes</h4>
+              <div class="tropes-list">
+              <label><input type="checkbox" name="tropes-literary" value="coming of age"> coming of age</label>
+              <label><input type="checkbox" name="tropes-literary" value="grief and healing"> grief and healing</label>
+              <label><input type="checkbox" name="tropes-literary" value="family secrets"> family secrets</label>
+              <label><input type="checkbox" name="tropes-literary" value="found family"> found family</label>
+              <label><input type="checkbox" name="tropes-literary" value="road trip"> road trip</label>
+              <label><input type="checkbox" name="tropes-literary" value="return to a small town"> return to a small town</label>
+              <label><input type="checkbox" name="tropes-literary" value="friendship over decades"> friendship over decades</label>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-box" id="moods">
+          <h3>3. How are you feeling?</h3>
+          <div class="mood-list">
+            <label><input type="checkbox" name="mood" value="cozy"> Cozy</label>
+            <label><input type="checkbox" name="mood" value="romantic"> Romantic</label>
+            <label><input type="checkbox" name="mood" value="adventurous"> Adventurous</label>
+            <label><input type="checkbox" name="mood" value="dark"> Dark</label>
+            <label><input type="checkbox" name="mood" value="melancholic"> Melancholic</label>
+            <label><input type="checkbox" name="mood" value="funny"> Funny</label>
+            <label><input type="checkbox" name="mood" value="hopeful"> Hopeful</label>
+          </div>
+        </div>
+
+        <div class="form-box" id="extras">
+          <h3>4. Anything else? (optional)</h3>
+          <p>
+            <label for="length">Length of the book</label><br>
+            <select id="length" name="length">
+              <option value="">Any length</option>
+              <option value="short">Short (under 300 pages)</option>
+              <option value="medium">Medium (300-500 pages)</option>
+              <option value="long">Long (over 500 pages)</option>
+            </select>
+          </p>
+          <p>
+            <label for="notes">Anything else we should know?</label><br>
+            <textarea id="notes" name="notes" rows="3" cols="50" placeholder="e.g. I loved Pride and Prejudice but I want something newer"></textarea>
+          </p>
+        </div>
+
+        <div class="buttons">
+          <button type="submit" class="button">Suggest books</button>
+          <button type="reset" class="button button-outline">Clear everything</button>
+        </div>
+
+      </form>
+    </section>
+
+    <section id="results">
+      <h2>Your suggestions</h2>
+      <p id="results-message">Your suggestions will appear here after you press "Suggest books".</p>
+      <div id="results-list"></div>
+    </section>
+
+    </main>
+
+  </div>
+
+  <footer id="contact">
+    <div class="footer-columns">
+      <div class="footer-info">
+        <h2>Contact</h2>
+        <p>Know a book that belongs here, or just want to say hi? Write to us.</p>
+        <p>Email: <a href="mailto:contact@bookmatch.com">contact@bookmatch.com</a></p>
+
+        <blockquote>&ldquo;Think before you speak. Read before you think.&rdquo;</blockquote>
+      </div>
+      <form class="contact-form" action="#contact" method="get">
+        <h3>Send us a message</h3>
+        <p>
+          <label for="name">Your name</label><br>
+          <input type="text" id="name" name="name">
+        </p>
+        <p>
+          <label for="email">Your email</label><br>
+          <input type="email" id="email" name="email">
+        </p>
+        <p>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </p>
+        <button type="submit" class="button">Send</button>
+      </form>
+    </div>
+    <p class="small-text">Book Match · Cozma Ioana </p>
+  </footer>
+
+
+</body>
+</html>

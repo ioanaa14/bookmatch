@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book of the month </title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;1,400&family=Figtree:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">Book Match</a>
+    <p class="tagline">Find your next read by genre, trope and mood</p>
+  </header>
+
+  <div class="page-wrapper">
+
+    <nav class="side-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="has-submenu">
+          <a href="find.html">Find a book</a>
+          <ul class="submenu">
+            <li><a href="find.html#genres">Genres</a></li>
+            <li><a href="find.html#moods">Mood</a></li>
+            <li><a href="find.html#extras">Extras</a></li>
+          </ul>
+        </li>
+        <li><a href="month.html" class="current-page">Book of the month</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+    <section id="month-intro">
+      <h1 class="page-title">Book of the month</h1>
+      <p>One book we think deserves a place on your shelf this month.</p>
+    </section>
+
+    <section id="book-of-the-month">
+      <div class="month-book">
+        <figure>
+          <img src="images/book-of-the-month.jpg" alt="Illustration of the book of the month" width="400" height="500">
+        </figure>
+        <div class="month-book-text">
+          <h2>Anxious People</h2>
+          <h3>by Fredrik Backman</h3>
+          <p>A bank robbery goes wrong, and the would-be robber runs into an apartment viewing and takes everyone there hostage. When the police finally get inside, the robber has vanished, and they have to work out who these very different strangers really are.</p>
+          <ul class="tags">
+            <li>funny</li>
+            <li>hopeful</li>
+            <li>found family</li>
+          </ul>
+          <a href="find.html" class="button">Find more like this</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-we-picked-it">
+      <h2>Why we picked it</h2>
+      <div class="text-columns">
+        <p>A failed bank robbery sounds like the start of a thriller, but this book is much more interested in the people than in the crime. Every hostage has a story, and the author slowly shows why each of them is more fragile than they look.</p>
+        <p>It is a good pick when you want something funny that also lets you feel things. The jokes are sharp, the characters argue and misunderstand each other, and somewhere along the way a group of strangers starts to look after one another.</p>
+        <p>It deals with difficult subjects, such as loneliness and money worries, with a lot of kindness, so you finish it feeling hopeful and not heavy. It does touch on depression, so keep that in mind if you are in a fragile mood.</p>
+      </div>
+    </section>
+
+    <section id="similar-books">
+      <h2>Read next if you liked it</h2>
+      <div class="similar-list">
+        <article class="book-card">
+          <h3>The Midnight Library</h3>
+          <p class="author">by Matt Haig</p>
+          <p class="book-description">A woman gets to try the lives she might have lived in a library between life and death.</p>
+          <ul class="tags">
+            <li>hopeful</li>
+            <li>grief and healing</li>
+            <li>second chance</li>
+          </ul>
+          <p class="book-info">Literary & contemporary · short read</p>
+        </article>
+        <article class="book-card">
+         <h3>The Thursday Murder Club</h3>
+          <p class="author">by Richard Osman</p>
+          <p class="book-description">Four retirees meet every week in a retirement village to investigate cold cases, until a real murder happens.</p>
+          <ul class="tags">
+            <li>cozy</li>
+            <li>funny</li>
+            <li>found family</li>
+          </ul> 
+          <p class="book-info">Mystery &amp; thriller · medium read</p>
+        </article>
+        <article class="book-card">
+          <h3>Britt-Marie Was Here</h3>
+          <p class="author">by Fredrik Backman</p>
+          <p class="book-description">A sixty-three-year-old woman leaves her marriage and ends up coaching a children’s football team in a dying town.</p>
+          <ul class="tags">
+            <li>cozy</li>
+            <li>hopeful</li>
+            <li>found family</li>
+          </ul>
+          <p class="book-info">Literary & contemporary · medium read</p>
+        </article>
+      </div>
+    </section>
+
+    </main>
+
+  </div>
+
+  <footer id="contact">
+    <div class="footer-columns">
+      <div class="footer-info">
+        <h2>Contact</h2>
+        <p>Know a book that belongs here, or just want to say hi? Write to us.</p>
+        <p>Email: <a href="mailto:contact@bookmatch.com">contact@bookmatch.com</a></p>
+        <blockquote>&ldquo;Think before you speak. Read before you think.&rdquo;</blockquote>
+      </div>
+      <form class="contact-form" action="#contact" method="get">
+        <h3>Send us a message</h3>
+        <p>
+          <label for="name">Your name</label><br>
+          <input type="text" id="name" name="name">
+        </p>
+        <p>
+          <label for="email">Your email</label><br>
+          <input type="email" id="email" name="email">
+        </p>
+        <p>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </p>
+        <button type="submit" class="button">Send</button>
+      </form>
+    </div>
+    <p class="small-text">Book Match · Cozma Ioana </p>
+  </footer>
+
+</body>
+</html>

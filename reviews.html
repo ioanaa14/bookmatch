@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <title> Reviews</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;1,400&amp;family=Figtree:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">Book Match</a>
+    <p class="tagline">Find your next read by genre, trope and mood</p>
+  </header>
+
+  <div class="page-wrapper">
+
+    <nav class="side-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="has-submenu">
+          <a href="find.html">Find a book</a>
+          <ul class="submenu">
+            <li><a href="find.html#genres">Genres</a></li>
+            <li><a href="find.html#moods">Mood</a></li>
+            <li><a href="find.html#extras">Extras</a></li>
+          </ul>
+        </li>
+        <li><a href="month.html">Book of the month</a></li>
+        <li><a href="reviews.html" class="current-page">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+    <section id="reviews-intro">
+      <h1 class="page-title">Reviews</h1>
+      <p>Finished a book we suggested, or one you found on your own? Tell other readers what you thought.</p>
+    </section>
+
+    <section id="leave-review">
+      <h2>Leave a review</h2>
+      <form id="review-form" class="review-form" action="#leave-review" method="get">
+        <p>
+          <label for="reviewer-name">Your name</label><br>
+          <input type="text" id="reviewer-name" name="reviewer-name" maxlength="40" required>
+        </p>
+        <p>
+          <label for="book-title">Book title</label><br>
+          <input type="text" id="book-title" name="book-title" maxlength="80" required>
+        </p>
+        <p>
+          <label for="rating">Your rating</label><br>
+          <select id="rating" name="rating" required>
+            <option value="">Choose...</option>
+            <option value="5">5 – Loved it</option>
+            <option value="4">4 – Really liked it</option>
+            <option value="3">3 – It was okay</option>
+            <option value="2">2 – Not for me</option>
+            <option value="1">1 – Didn't like it</option>
+          </select>
+        </p>
+        <p>
+          <label for="review-body">Your review</label><br>
+          <textarea id="review-body" name="review-body" rows="5" maxlength="500" required></textarea>
+        </p>
+        <button type="submit" class="button">Post review</button>
+      </form>
+    </section>
+
+    <section id="all-reviews">
+      <h2>What readers think</h2>
+      <div id="reviews-list">
+        <article class="review">
+          <h3>Six of Crows</h3>
+          <p class="stars">★★★★★</p>
+          <p class="review-text">I wanted a heist and I got a crew I would follow anywhere. Everyone has a past that comes out slowly, and the plan keeps changing in ways I didn’t expect. The first chapters are a bit confusing because of all the names, but it is worth pushing through.</p>
+          <p class="review-author">Review by Andreea</p>
+        </article>
+        <article class="review">
+          <h3>Gone Girl</h3>
+          <p class="stars">★★★★☆</p>
+          <p class="review-text">I couldn't put it down and the twist in the middle surprised me. It loses a star because the ending left me annoyed and did not meet my expectations.</p>
+          <p class="review-author">Review by Andrei</p>
+        </article>
+        <article class="review">
+          <h3>Persuasion</h3>
+          <p class="stars">★★★★☆</p>
+          <p class="review-text">Quieter than Pride and Prejudice, but I liked it more. The start is slow, but Anne is so patient and sensible that you end up on her side from the first chapters. The letter near the end is worth the whole wait.</p>
+          <p class="review-author">Review by Mara</p>
+        </article>
+      </div>
+    </section>
+
+    </main>
+
+  </div>
+
+  <footer id="contact">
+    <div class="footer-columns">
+      <div class="footer-info">
+        <h2>Contact</h2>
+        <p>Know a book that belongs here, or just want to say hi? Write to us.</p>
+        <p>Email: <a href="mailto:contact@bookmatch.com">contact@bookmatch.com</a></p>
+        <blockquote>&ldquo;Think before you speak. Read before you think.&rdquo;</blockquote>
+      </div>
+      <form class="contact-form" action="#contact" method="get">
+        <h3>Send us a message</h3>
+        <p>
+          <label for="name">Your name</label><br>
+          <input type="text" id="name" name="name">
+        </p>
+        <p>
+          <label for="email">Your email</label><br>
+          <input type="email" id="email" name="email">
+        </p>
+        <p>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </p>
+        <button type="submit" class="button">Send</button>
+      </form>
+    </div>
+    <p class="small-text"> Book Match · Cozma Ioana </p>
+  </footer>
+
+</body>
+</html>

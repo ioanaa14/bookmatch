@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Match</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;1,400&amp;family=Figtree:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+ 
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">Book Match</a>
+    <p class="tagline"> Find your next read by genre, trope and mood</p>
+  </header>
+
+  <div class="page-wrapper">
+
+    <nav class="side-menu">
+      <ul>
+        <li><a href="index.html" class="current-page">Home</a></li>
+        <li class="has-submenu">
+          <a href="find.html">Find a book</a>
+          <ul class="submenu">
+            <li><a href="find.html#genres">Genres</a></li>
+            <li><a href="find.html#moods">Mood</a></li>
+            <li><a href="find.html#extras">Extras</a></li>
+          </ul>
+        </li>
+        <li><a href="month.html">Book of the month</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+    <section id="welcome">
+      <div class="welcome-text">
+        <h1>Tell us how you feel. We'll find what you read next.</h1>
+        <p>Tell Book Match which genres, tropes and moods you want tonight, press one button and get a short list of books chosen for you.</p>
+        <a href="find.html" class="button">Find my next book</a>
+      </div>
+      <div class="welcome-book">
+        <div class="moving-book">What should I read tonight?</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What you can do here</h2>
+      <div class="link-cards">
+        <a href="find.html" class="link-card">
+          <h3>Find a book</h3>
+          <p>Pick your genres, yout favourite tropes and your mood. We suggests books that fit.</p>
+        </a>
+        <a href="month.html" class="link-card">
+          <h3>Book of the month</h3>
+          <p>One book we think deserves your attention, with a few more to read if you liked it.</p>
+        </a>
+        <a href="reviews.html" class="link-card">
+          <h3>Reviews</h3>
+          <p>Read what other readers thought, and leave your own review of a book you finished.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="how-it-works">
+      <div class="info-row">
+        <img src="images/bookshelf.jpg" alt="A bookshelf with colourful book spines" width="600" height="450">
+        <div class="info-text">
+          <h2>How it works</h2>
+          <div class="text-columns">
+            <p>Start with a genre. Tropes change from one genre to another.</p>
+            <p>Then add your mood. After a long day you probably want comfort, not a thriller, however good the thriller is.</p>
+            <p>Press the button and you get a few books, each with a short reason why it fits. Don't like the list? Change a tick and ask again.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    </main>
+
+  </div>
+
+  <footer id="contact">
+    <div class="footer-columns">
+      <div class="footer-info">
+        <h2>Contact</h2>
+        <p>Know a book that belongs here, or just want to say hi? Write to us.</p>
+        <p>Email: <a href="mailto:contact@bookmatch.com">contact@bookmatch.com</a></p>
+        <blockquote>&ldquo;Think before you speak. Read before you think.&rdquo;</blockquote>
+      </div>
+      <form class="contact-form" action="#contact" method="get">
+        <h3>Send us a message</h3>
+        <p>
+          <label for="name">Your name</label><br>
+          <input type="text" id="name" name="name">
+        </p>
+        <p>
+          <label for="email">Your email</label><br>
+          <input type="email" id="email" name="email">
+        </p>
+        <p>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </p>
+        <button type="submit" class="button">Send</button>
+      </form>
+    </div>
+    <p class="small-text">Book Match · Cozma Ioana </p>
+  </footer>
+
+</body>
+</html>
